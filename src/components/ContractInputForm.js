@@ -50,7 +50,6 @@ class ContractInputForm extends Component {
         <div>
           <form onSubmit={this.handleValidation}>
             <label>
-              Hey
               <input className="contract-input" placeholder="Contract Address" type="text" address={this.state.address}  onChange={this.handleChange}></input>
               <input className="cta-button import-contract-button" type="submit" value="Submit" />
             </label>
@@ -61,4 +60,3 @@ class ContractInputForm extends Component {
   }
 
 export default ContractInputForm
-
