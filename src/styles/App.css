@@ -32,6 +32,49 @@
   animation: gradient-animation 4s infinite;
 }
 
+.sub-text {
+  font-size: 25px;
+  color: white;
+}
+
+.cta-button {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.import-contract-button {
+  background: -webkit-linear-gradient(left, #c657ae, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.contract-input {
+  height: 43px;
+  border: 0;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #0d1116;
+  margin-right: 10px;
+
+}
+
+.contract-validation {
+  font-size: 15px;
+  color: white;
+}
+
 /* KeyFrames */
 @-webkit-keyframes gradient-animation {
   0% {
