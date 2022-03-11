@@ -51,7 +51,7 @@ class ContractInputForm extends Component {
           <form onSubmit={this.handleValidation}>
             <label>
               <input className="contract-input" placeholder="Contract Address" type="text" address={this.state.address}  onChange={this.handleChange}></input>
-              <input className="cta-button import-contract-button" type="submit" value="Submit" />
+              <input className="cta-button gradient-background" type="submit" value="Submit" />
             </label>
           </form>
         </div>

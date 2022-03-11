@@ -37,6 +37,18 @@
   color: white;
 }
 
+.body-text {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+  margin-left: 300px;
+  margin-right: 300px;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 10px;
+  color: white;
+}
+
 .cta-button {
   height: 45px;
   border: 0;
@@ -50,7 +62,7 @@
   color: white;
 }
 
-.import-contract-button {
+.gradient-background {
   background: -webkit-linear-gradient(left, #c657ae, #35aee2);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;

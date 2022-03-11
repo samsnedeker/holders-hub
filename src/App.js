@@ -18,6 +18,11 @@ const App = () => {
             Import your contract below 
           </p>
           <ContractInputForm></ContractInputForm>
+          <div className="my-contracts-container">
+            <p className="body-text gradient-background">
+              My Contracts
+            </p>
+          </div>
         </div>
       </header>
     </div>
