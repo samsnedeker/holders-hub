@@ -30,12 +30,6 @@ class App extends React.Component {
             <p className="sub-text">
               Import your contract below 
             </p>
-            {/* <ContractInputForm></ContractInputForm> */}
-            {/* <div className="my-contracts-container">
-              <p className="body-text gradient-background">
-                My Contracts
-              </p>
-            </div> */}
             <ContractInputForm allContracts={this.state.allContracts} handleStateChange={this.handleStateChange}></ContractInputForm>
             <Contracts allContracts={this.state.allContracts}></Contracts>
           </div>

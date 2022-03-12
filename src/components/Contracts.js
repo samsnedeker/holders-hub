@@ -21,7 +21,7 @@ class Contracts extends React.Component {
           {this.props.allContracts.map((contract, index) => {
             return (
               <>
-              <div key={index} style={{ color: "white", backgroundColor: "#0d1116", marginTop: "5px", marginBottom: "5px", padding: "20px", marginLeft: "250px", marginRight:"250px", borderRadius: "5px", outlineColor: "grey", outlineStyle: "solid"}}>
+              <div key={index} style={{ color: "white", backgroundColor: "#0d1116", marginTop: "10px", marginBottom: "10px", padding: "20px", marginLeft: "250px", marginRight:"250px", borderRadius: "5px", outlineColor: "grey", outlineStyle: "solid"}}>
                   {console.log("all contracts", this.props.allContracts)}
                 <div>{contract}</div>
               </div>
