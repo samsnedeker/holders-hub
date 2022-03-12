@@ -47,7 +47,15 @@
   margin-top: 50px;
   padding: 10px;
   color: white;
+  text-align: center;
 }
+/* 
+.my-contracts-container {
+  background-color: #EFEFEF;
+  padding:"8px";
+  margin-bottom: "20px";
+  border-radius: "5px";
+} */
 
 .cta-button {
   height: 45px;
@@ -85,6 +93,14 @@
 .contract-validation {
   font-size: 15px;
   color: white;
+}
+
+.contractContainer {
+  background-color: #0d1116;
+  padding:"8px";
+  margin-top: "30px";
+  margin-bottom: "20px";
+  border-radius: "5px";
 }
 
 /* KeyFrames */

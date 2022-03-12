@@ -1,4 +1,4 @@
-import React, { Component, setState } from "react";
+import React, { Component, useContext } from "react";
 
 class ContractInputForm extends Component {
     constructor(props) {
@@ -19,6 +19,8 @@ class ContractInputForm extends Component {
   
     handleSubmit() {
       if (this.state.validContract === true) {
+        this.props.handleStateChange(this.props.allContracts.push(this.state.address));
+        console.log("All Contracts: ", this.props.allContracts);
         alert("Contract imported successfully!");
       } else {
         alert("Contract import failed. Please make sure you input a valid contract address!");
