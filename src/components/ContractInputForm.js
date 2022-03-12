@@ -17,13 +17,13 @@ class ContractInputForm extends Component {
       this.setState({ address: event.target.value })
     }
   
-    handleSubmit() {
+    handleSubmit(error) {
       if (this.state.validContract === true) {
         this.props.handleStateChange(this.props.allContracts.push(this.state.address));
         console.log("All Contracts: ", this.props.allContracts);
         alert("Contract imported successfully!");
       } else {
-        alert("Contract import failed. Please make sure you input a valid contract address!");
+        alert(error);
 
       }
     }
@@ -36,16 +36,23 @@ class ContractInputForm extends Component {
 
       if (!(address.length === 42 && address.slice(0, 2) === "0x")) {
         validContract = false;
-        error = "Invalid contract address!"
+        error = "Contract address not valid. Please input a valid contract address."
         this.setState( { error: error, validContract: false }, function() {
-          this.handleSubmit();
+          this.handleSubmit(error);
         } )
-    } else {
-      this.setState( { validContract: true }, function() {
-        this.handleSubmit();
-      } )
+      } 
+      else if (this.props.allContracts.includes(address)) {
+        error = "This contract has already been imported!"
+        this.setState( { error: error, validContract: false }, function() {
+          this.handleSubmit(error);
+        } )
+      }
+      else {
+        this.setState( { validContract: true }, function() {
+          this.handleSubmit(error);
+        } )
+      }
     }
-  }
   
     render() {
       return (
