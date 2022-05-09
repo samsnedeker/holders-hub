@@ -28,7 +28,7 @@ class App extends React.Component {
         <header className="container">
           <div className="header-container">
             <p className="header gradient-text">
-              Welcome to Holder's Hub
+              Welcome to Holder's Hub. We're so excited!
             </p>
             <p className="sub-text">
               Import your contract below 
