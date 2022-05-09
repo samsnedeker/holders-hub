@@ -18,6 +18,7 @@ class App extends React.Component {
     this.setState({ allContracts: this.state.allContracts });
     console.log("state updated: ", this.state.allContracts);
   }
+  //changes again
 
   render() {
     return (
