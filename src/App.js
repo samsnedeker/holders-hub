@@ -19,6 +19,8 @@ class App extends React.Component {
     console.log("state updated: ", this.state.allContracts);
   }
   //changes again
+  //make change for rebase here
+  //make another change here
 
   render() {
     return (

@@ -34,7 +34,14 @@ class ContractInputForm extends Component {
       let error = "";
       let validContract = "";
 
-      if (!(address.length === 42 && address.slice(0, 2) === "0x")) {
+      if (!address | address.length === 0) {
+        validContract = false;
+        error = "Please input a contract address."
+        this.setState( { error: error, validContract: false }, function() {
+          this.handleSubmit(error);
+        } )
+      }
+      else if (!(address.length === 42 && address.slice(0, 2) === "0x")) {
         validContract = false;
         error = "Contract address not valid. Please input a valid contract address."
         this.setState( { error: error, validContract: false }, function() {
